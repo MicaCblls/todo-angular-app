@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid steelblue;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.headerContainer {
+  width: 100%;
+}
