@@ -1,4 +1,4 @@
 export const commonEnv = {
-  apiKey: import.meta.env['NG_API_KEY'],
-  apiUrl: import.meta.env['NG_API_URL'],
+  apiKey: process.env['NG_API_KEY'],
+  apiUrl: process.env['NG_API_URL'],
 };
