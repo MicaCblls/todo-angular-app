@@ -12,11 +12,8 @@ export class TaskService {
   }
 } */
 import { Injectable } from '@angular/core';
-import { createClient } from '@supabase/supabase-js';
 import { Task } from '../components/tasks/interface/Task.interface';
-import { commonEnv } from 'src/environments/environment.common';
-
-const supabase = createClient(commonEnv.apiUrl, commonEnv.apiKey);
+import supabase from 'src/supabase.config';
 
 @Injectable({
   providedIn: 'root',
