@@ -2,9 +2,16 @@
   border: 1px solid steelblue;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
+  background-color: #f9fbfa;
 }
 .headerContainer {
   width: 100%;
+}
+.tasksContainer {
+  width: 100%;
+  /*   display: flex; */
 }

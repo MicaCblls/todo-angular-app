@@ -8,7 +8,7 @@ import { TaskService } from 'src/app/services/task.service';
   styleUrls: ['./tasks.component.css'],
 })
 export class TasksComponent implements OnInit {
-  @Input() showForm!: boolean;
+  /*   @Input() showForm!: boolean; */
   tasks: Task[] = [];
   /*  newTask: Task = { title: '', day: '', reminder: false }; */
 

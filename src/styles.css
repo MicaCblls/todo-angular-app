@@ -16,7 +16,8 @@ html {
 body {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  background-image: url("./assets/leavesPattern.webp");
 }
 .container {
   max-width: 500px;

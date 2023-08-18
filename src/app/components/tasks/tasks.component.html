@@ -1,8 +1,6 @@
-<app-add-task
-  *ngFor="let task of tasks"
-  (onAddEmitter)="addTask(task)"
-  [showForm]="showForm"
-></app-add-task>
+<!-- <div class="tasksContainer"> -->
+<app-add-task (onAddEmitter)="addTask($event)"></app-add-task
+><!-- [showForm]="showForm" -->
 
 <app-task-item
   *ngFor="let task of tasks"
@@ -11,3 +9,4 @@
   (onToggleReminder)="updateTask(task)"
 >
 </app-task-item>
+<!-- </div> -->

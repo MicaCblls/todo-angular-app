@@ -1,11 +1,16 @@
 <!-- Input for adding new tasks -->
-<form class="form-add" #taskForm="ngForm" *ngIf="showForm">
+<form
+  class="form-add"
+  #taskForm="ngForm"
+  *ngIf="showAddTask"
+  (ngSubmit)="onAdd()"
+>
   <mat-form-field class="form__element">
     <input
       matInput
       required
       [(ngModel)]="newTask.title"
-      placeholder="New Task Title"
+      placeholder="Add Task"
       name="title"
       #title="ngModel"
     />
@@ -15,7 +20,7 @@
       matInput
       required
       [(ngModel)]="newTask.day"
-      placeholder="New Task Day"
+      placeholder="Add Day & Time"
       name="day"
       #day="ngModel"
     />
@@ -24,7 +29,7 @@
   <mat-checkbox
     class="form__element"
     [(ngModel)]="newTask.reminder"
-    placeholder="Remind me"
+    placeholder="Set Reminder"
     name="reminder"
     #reminder="ngModel"
     >Set reminder?</mat-checkbox
@@ -35,7 +40,6 @@
     mat-raised-button
     color="accent"
     [disabled]="!taskForm.form.valid"
-    (click)="addTask(newTask)"
   >
     Add Task
   </button>
